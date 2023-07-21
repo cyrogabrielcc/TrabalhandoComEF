@@ -31,3 +31,11 @@ C:\dev\DotNet\TrabalhandoComEF\obj\Debug\net7.0\refint\TrabalhandoComEF.dll
 C:\dev\DotNet\TrabalhandoComEF\obj\Debug\net7.0\TrabalhandoComEF.pdb
 C:\dev\DotNet\TrabalhandoComEF\obj\Debug\net7.0\TrabalhandoComEF.genruntimeconfig.cache
 C:\dev\DotNet\TrabalhandoComEF\obj\Debug\net7.0\ref\TrabalhandoComEF.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Humanizer.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\dev\DotNet\TrabalhandoComEF\bin\Debug\net7.0\System.CodeDom.dll
