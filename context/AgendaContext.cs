@@ -9,6 +9,7 @@ namespace TrabalhandoComEF.context
 {
     public class AgendaContext : DbContext
     {
+       // Recebe a conexão do banco e passa para o dbcontext que gerencia a conexão do banco de dados
        public AgendaContext(DbContextOptions<AgendaContext> options) : base(options)
        {
             
