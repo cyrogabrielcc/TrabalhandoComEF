@@ -9,7 +9,6 @@ namespace TrabalhandoComEF.Entities
     {
         public int ContatoId { get; set; }
         public string NomeContato  { get; set; }
-
         public string Telefone  { get; set; }
         public string Ativo  { get; set; }
     }
