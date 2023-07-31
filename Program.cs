@@ -7,8 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder
     .Services
     .AddDbContext<AgendaContext>(options => 
-                    options.UseSqlServer(builder
-                           .Configuration
+                    options.UseSqlServer(builder.Configuration
                            .GetConnectionString("ConexaoPadrao")));
 
 
