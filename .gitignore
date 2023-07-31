@@ -211,9 +211,6 @@ project.lock.json
 *.Specs_*.html
 
 
-# Settings do json
-appsettings.Development.json
-
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
