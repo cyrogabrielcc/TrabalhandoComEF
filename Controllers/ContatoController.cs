@@ -29,10 +29,25 @@ namespace TrabalhandoComEF.Controllers
         [HttpGet]
         public IActionResult ObterPeloId(int id){
             var contato = _context.Contatos.Find(id);
-            if(contato==null){
-                return NotFound();
-            }
+            
+            if(contato==null) return NotFound();
+            
             return Ok(contato);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateContato(int id, Contato contato){
+            var contatoBanco = _context.Contatos.Find(id);
+            
+            if (contatoBanco == null)  return NotFound();
+            contatoBanco.NomeContato = contato.NomeContato;
+            contatoBanco.Telefone = contato.Telefone;
+            contatoBanco.Ativo = contato.Ativo;
+            
+            _context.Contatos.Update(contatoBanco);
+            _context.SaveChanges();
+
+            return Ok();
         }
        
     }
