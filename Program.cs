@@ -8,14 +8,13 @@ using System;
 // Use a variável 'minhaSenha' na Connection String ou em qualquer outra parte que precise da senha.
 
 var builder = WebApplication.CreateBuilder(args);
-string connectionString = Environment.GetEnvironmentVariable("ConexaoPadrao");
 
 // Add services to the container.
 builder
     .Services
     .AddDbContext<AgendaContext>(options => 
                     options.UseSqlServer(builder.Configuration
-                           .GetConnectionString(connectionString)));
+                           .GetConnectionString("ConexaoPadrao")));
     
 
 
