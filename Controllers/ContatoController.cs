@@ -25,6 +25,15 @@ namespace TrabalhandoComEF.Controllers
             _context.SaveChanges();
             return Ok(contato);
         }
+
+        [HttpGet]
+        public IActionResult ObterPeloId(int id){
+            var contato = _context.Contatos.Find(id);
+            if(contato==null){
+                return NotFound();
+            }
+            return Ok(contato);
+        }
        
     }
 }
