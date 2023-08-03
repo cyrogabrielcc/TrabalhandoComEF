@@ -47,7 +47,18 @@ namespace TrabalhandoComEF.Controllers
             _context.Contatos.Update(contatoBanco);
             _context.SaveChanges();
 
-            return Ok();
+            return Ok(contatoBanco);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletaContato(int id){
+             var contatoBanco = _context.Contatos.Find(id);
+             if (contatoBanco == null)  return NotFound();
+             _context.Contatos.Remove(contatoBanco);
+             _context.SaveChanges();
+
+             return NoContent();
+
         }
        
     }
