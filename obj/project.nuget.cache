@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vwmBptcNg9hqdqDs8UL3V78hgrh6Xljnhlnb6qdsbJQ4ZjeeDS5aqnkSU778FcLqoAFqxmY9qkhWLF42Yxj57w==",
+  "dgSpecHash": "Jgw5uWIYMykctwNyxk4rec5XSs+TcIGfcyeNX2II+9cqNXc55hR2o+FiVmnDDmPLyc3MEkcvN4hCjthdZmg9Zg==",
   "success": true,
-  "projectFilePath": "C:\\dev\\DotNet\\TrabalhandoComEF\\TrabalhandoComEF.csproj",
+  "projectFilePath": "c:\\dev\\DotNet\\TrabalhandoComEF\\TrabalhandoComEF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cyrog\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\cyrog\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

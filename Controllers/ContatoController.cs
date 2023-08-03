@@ -26,6 +26,7 @@ namespace TrabalhandoComEF.Controllers
             return Ok(contato);
         }
 
+        // >> Obter pelo ID
         [HttpGet]
         public IActionResult ObterPeloId(int id){
             var contato = _context.Contatos.Find(id);
@@ -35,11 +36,33 @@ namespace TrabalhandoComEF.Controllers
             return Ok(contato);
         }
 
+        // >> Obter pelo Nome 
+        [HttpGet]
+        public IActionResult ObterPorNome(String nome){
+            
+            var contatos = _context.Contatos
+                                   .Where(x => x.NomeContato
+                                                .Contains(nome));
+            if(contatos==null) return NotFound();
+            
+            return Ok(contatos);
+        }
+
+        // >> Obter pelo Todos
+        [HttpGet]
+        public IActionResult ObterTodos(){
+            var contato = _context.Contatos.Find();
+            return Ok(contato);
+        }
+
+        // >> Alterando um contato
         [HttpPut("{id}")]
         public IActionResult UpdateContato(int id, Contato contato){
             var contatoBanco = _context.Contatos.Find(id);
             
             if (contatoBanco == null)  return NotFound();
+            
+            // Atualizando
             contatoBanco.NomeContato = contato.NomeContato;
             contatoBanco.Telefone = contato.Telefone;
             contatoBanco.Ativo = contato.Ativo;
@@ -50,6 +73,7 @@ namespace TrabalhandoComEF.Controllers
             return Ok(contatoBanco);
         }
 
+        // >> Deletando um contato
         [HttpDelete("{id}")]
         public IActionResult DeletaContato(int id){
              var contatoBanco = _context.Contatos.Find(id);
