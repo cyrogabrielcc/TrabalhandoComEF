@@ -48,13 +48,6 @@ namespace TrabalhandoComEF.Controllers
             return Ok(contatos);
         }
 
-        // >> Obter pelo Todos
-        [HttpGet]
-        public IActionResult ObterTodos(){
-            var contato = _context.Contatos.Find();
-            return Ok(contato);
-        }
-
         // >> Alterando um contato
         [HttpPut("{id}")]
         public IActionResult UpdateContato(int id, Contato contato){
