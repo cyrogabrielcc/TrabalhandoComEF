@@ -23,7 +23,8 @@ namespace TrabalhandoComEF.Controllers
         {
             _context.Add(contato);
             _context.SaveChanges();
-            return Ok(contato);
+            return CreatedAtAction(nameof(ObterPeloId), 
+                                   new { Id = contato.ContatoId }, contato);
         }
 
         // >> Obter pelo ID
